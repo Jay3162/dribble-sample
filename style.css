@@ -1,0 +1,240 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    background-image: url('/images/shutterstock_30.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 8;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.nav-el:hover {
+    background-color:#ff521c;
+    color: white;
+}
+
+.nav-el {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    width: 4vw;
+    font-size: 0.9vw;
+}
+
+.nav-el {
+    cursor: pointer;
+}
+
+.sidebar-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    margin-top: -20rem;
+    font-family: sans-serif;
+    font-size: 0.8vw;
+    overflow: hidden;
+}
+
+.sidebar-title {
+    transform: rotate(-90deg);
+    width: 24vw;
+    margin-top: 6rem;
+    letter-spacing: 5px;
+}
+
+.sidebar-nums {
+    margin-top: 15rem;
+    transform: rotate(-90deg);
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-right-btns {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+    z-index: 9;
+    font-size: 0.8rem;
+}
+
+.left-btn:hover, .right-btn:hover {
+    background-color: #ff521c;
+    cursor: pointer;
+}
+
+.left-btn, .right-btn {
+    padding: 1.15rem;
+}
+
+.info-box-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    color: white;
+    padding: 0rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-right: 35rem;
+    margin-top: 25rem;
+    font-family: sans-serif;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("/images/bg.png");
+    background-repeat: no-repeat;
+}
+
+.divider {
+    background-color: #ff521c;
+}
+
+.box-title1 {
+    margin-bottom: -1rem;
+}
+
+.box-title2 {
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: -1rem;
+    margin-right: 2rem;
+    width: 5vw;
+}
+
+.box-title3 {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.city {
+    margin-top: 1rem;
+    letter-spacing: 5px;
+    color: #7a7a7a;
+    font-size: 0.6vw;
+}
+
+.case-btn {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    background-color:#ff521c;
+    font-size: 0.6rem;
+    font-weight: 900;
+    z-index: 9;
+    width: 4vw;
+    margin-top: 2.2rem;
+}
+
+.case-btn:hover {
+    cursor: pointer;
+    background-color: #ff3c00;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white !important;
+    justify-content: flex-end;
+    align-items: center;
+    width: 8vw;
+    height: 12vh;
+    margin-top: 2rem;
+    padding-top: 1vh;
+}
+
+.content-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: -4.5rem;
+}
+
+.content-num {
+    width: 4.4vw;
+}
+
+.th {
+    background-color:#ff521c;
+    color: white;
+    padding: 3px 1px;
+    font-size: 0.3vw;
+    margin-left: 5px;
+}
+
+.street {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    width: 5.6vw;
+}
+
+@media (max-width: 1840px) {
+    .content1 {
+        position: absolute;
+        left: 5vw;
+    }
+}
+
+@media (max-width: 1840px) {
+    .info-box {
+        position: absolute;
+        left: 20vw;
+    }
+}
+
+@media (max-width: 1260px) {
+    .info-box {
+        position: absolute;
+        left: 10vw;
+        width: 10vw;
+    }
+}
+
+@media (max-height: 800px) {
+    .content1 {
+        padding-top: -2rem;
+        height: 10vh;
+    }
+}
